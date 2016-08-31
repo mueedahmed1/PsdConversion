@@ -10,169 +10,554 @@
     <link href="bootstrap/css/mystyle.css" rel="stylesheet">
     <script src="bootstrap/js/jquery.min.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
+
+    <!--slick slider link-->
+    <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
+
+
+    <!--font awsesome CDN link-->
+    <script src="https://use.fontawesome.com/9b0d701ca7.js"></script>
+
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:700" rel="stylesheet">
 
     <title>Title</title>
 
 
-
 </head>
 <body>
 
-<div class="container">
-<nav class="navbar navbar-default">
-    <div class="navbar-header">
 
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-        </button>
-    </div>
+<nav class="navbar navbar-default" id="navb" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
 
-<div id="navbar" class="navbar-collapse collapse">
-    <ul class="nav navbar-nav">
-        <li role="presentation" ><a id="one" href="#"><img src="images/layer 1.png" height="72px" width="128px" alt="sorry"></a></li>
-        <li role="presentation" class="active"><a class="two" id="three" href="#">accueil</a></li>
-        <li role="presentation" ><a class="two" href="#">service packs</a></li>
-        <li role="presentation" ><a class="two" href="#">fonctionnalites</a></li>
-        <li role="presentation" ><a class="two" href="#">products</a></li>
-        <li role="presentation" ><a class="two" href="#">contact</a></li>
-        <!--<div class="btn-group btn-group-justified" role="group">-->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
 
-        <!--</div>-->
-    </ul>
-    <ul class="navbar-right" role="group">
-        <button type="button" class="btn btn-default">call contact</button>
-    </ul>
+                <img src="images/layer 1.png" height="72px" width="128px" alt="sorry">
+
         </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+
+                <li role="presentation" class="active"><a class="two" id="three" href="#">accueil</a></li>
+                <li role="presentation"><a class="two" href="#">service packs</a></li>
+                <li role="presentation"><a class="two" href="#">fonctionnalites</a></li>
+                <li role="presentation"><a class="two" href="#">products</a></li>
+                <li role="presentation"><a class="two" href="#">contact</a></li>
+
+            </ul>
+            <ul id="right" role="group">
+                <button type="button" class="btn btn-default">call contact</button>
+            </ul>
+        </div>
+    </div>
 </nav>
-    </div>
 
-<div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-pause="hover">
-    <!-- Indicators -->
-    <ol class="carousel-indicators">
-        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-        <li data-target="#carousel-example-generic" data-slide-to="3"></li>
-    </ol>
 
-    <!-- Wrapper for slides -->
-    <div class="carousel-inner" role="listbox">
-        <div class="item active">
-            <img src="images/banner_02_02.png" alt="slide1">
-            <div class="carousel-caption">
-               <h1 class="head">bien choisir <span class="spann">sa solution</span> de téléphonie c'est avant tout bien choisir<span class="spann"> son expert</span></h1>
-                <button class="slider-button"><p class="slid text-center"><small>appelez-nous maintenant depuis votre PC</small></p></button>
-            </div>
-        </div>
-        <div class="item">
-            <img src="images/banner_02_02.png" alt="slide2">
-            <div class="carousel-caption">
-               <h1 class="head">bien choisir <span class="spann">sa solution</span> de téléphonie c'est avant tout bien choisir<span class="spann"> son expert</span></h1>
-                <button class="slider-button"><p class="slid text-center"><small>appelez-nous maintenant depuis votre PC</small></p></button>
-            </div>
-        </div>
-        <div class="item">
-            <img src="images/banner_02_02.png" alt="slide3">
-            <div class="carousel-caption">
-              <h1 class="head">bien choisir <span class="spann">sa solution</span> de téléphonie c'est avant tout bien choisir<span class="spann"> son expert</span></h1>
-                <button class="slider-button"><p class="slid text-center"><small>appelez-nous maintenant depuis votre PC</small></p></button>
-            </div>
-        </div>
-        <div class="item">
-            <img src="images/banner_02_02.png" alt="slide4">
-            <div class="carousel-caption">
-               <h1 class="head">bien choisir <span class="spann">sa solution</span> de téléphonie c'est avant tout bien choisir <span class="spann">son expert</span></h1>
-                <button class="slider-button"><p class="slid text-center"><small>appelez-nous maintenant depuis votre PC</small></p></button>
+<div class="sliderr">
+
+    <div class="slides">
+        <div class="slide-one">
+            <div class="inrslider">
+
+                <h1 class="head text-center">bien choisir <span class="spann">sa solution</span> de téléphonie
+                    c'est avant
+                    tout bien choisir<span class="spann"> son expert</span>
+                </h1>
+                <button class="center-block inrbtn">
+
+                        <small>appelez-nous maintenant depuis votre PC</small>
+
+                </button>
+
             </div>
         </div>
     </div>
 
+    <div class="slides">
+        <div class="slide-two">
+            <div class="inrslider">
+                <h1 class="head text-center">bien choisir <span class="spann">sa solution</span> de téléphonie
+                    c'est avant
+                    tout bien choisir<span class="spann"> son expert</span></h1>
+                <button class="center-block inrbtn">
+
+                        <small>appelez-nous maintenant depuis votre PC</small>
+
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="slides">
+        <div class="slide-three">
+            <div class="inrslider">
+                <h1 class="head text-center">bien choisir <span class="spann">sa solution</span> de téléphonie
+                    c'est avant
+                    tout bien choisir<span class="spann"> son expert</span></h1>
+                <button class="center-block inrbtn">
+
+                        <small>appelez-nous maintenant depuis votre PC</small>
+
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="slides">
+        <div class="slide-four">
+            <div class="inrslider">
+                <h1 class="head text-center">bien choisir <span class="spann">sa solution</span> de téléphonie
+                    c'est avant
+                    tout bien choisir <span class="spann">son expert</span></h1>
+                <button class="center-block inrbtn">
+
+                        <small>appelez-nous maintenant depuis votre PC</small>
+
+                </button>
+            </div>
+        </div>
+    </div>
 
 </div>
 
 
 <div id="parag">
     <div class="container">
-    <p id="para1" class="para">
-        pfix développe ses services packs de téléphonie voip pour les entreprises soucieuses de s'équiper d'une technologie performante et économique. Les avantages de cette
-        technologie sont nombreux mais elle demande une expertise avancée dont ipfix a fait sa spécialité depuis plusieurs années.</p>
+        <p id="para1" class="para">
+            pfix développe ses services packs de téléphonie voip pour les entreprises soucieuses de s'équiper d'une
+            technologie performante et économique. Les avantages de cette
+            technologie sont nombreux mais elle demande une expertise avancée dont ipfix a fait sa spécialité depuis
+            plusieurs années.</p>
 
-    <p id="para2" class="para">Vous pouvez faire votre choix parmis nos services packs ou nous demander un audit gratuit pour analyser votre situation et définir vos besoins aux mieux de vos intérêts.
-        Un renseignement ne coûte rien et vous permettra de mieux choisir la solution la plus adaptée à vos ressources et besoins.</p>
- <div class="btn col-lg-4 col-lg-offset-4 col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3 col-xs-8 col-xs-offset-2">
-     <a href="#">je suis intéressé, contactez-moi</a>
- </div>
-    <!--//class="parab"-->
-    <!--<p id="butn" class="text-center"></p>-->
+        <p id="para2" class="para">Vous pouvez faire votre choix parmis nos services packs ou nous demander un audit
+            gratuit pour analyser votre situation et définir vos besoins aux mieux de vos intérêts.
+            Un renseignement ne coûte rien et vous permettra de mieux choisir la solution la plus adaptée à vos
+            ressources et besoins.</p>
+
+        <div class="paragchld col-lg-4 col-lg-offset-4 col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3 col-xs-8 col-xs-offset-2">
+            <button class="btn btn-block">je suis intéressé, contactez-moi</button>
+        </div>
+        <!--//class="parab"-->
+        <!--<p id="butn" class="text-center"></p>-->
     </div>
-    </div>
+</div>
 
 <p id="p1">
-    le prix et les avantages de nos service packs<br />
+    le prix et les avantages de nos service packs<br/>
     vont vous surprendre
 </p>
 
 <div class="pix container">
     <div class="row">
-    <div class="col-md-4 col-lg-4 col-sm-6 col-xs-12">
-       <table class="table table-hover">
-           <thead class="tb1">
-           <tr>
-<img src="images/image.png" alt="sorry">
-               <h3 id="ovrimg"><span>easy ONE</span></h3>
-           </tr>
-           </thead>
-           <tbody>
-           <tr class="active">
-               <td>name</td>
-           </tr>
-           <tr class="success">
-               <td>name</td>
-           </tr>
-           <tr class="warning">
-               <td>name</td>
-           </tr>
-           <tr class="danger">
-               <td>name</td>
-           </tr>
-           <tr class="info">
-               <td>name</td>
-           </tr>
-           <tr class="danger">
-               <td>name</td>
-           </tr>
-           </tbody>
-       </table>
+
+        <div class="col-md-6 col-lg-4 col-sm-6 col-xs-12 pixchild">
+            <div id="f1">
+                <!--<img src="images/image.png" alt="sorry" height="146px" width="372px">-->
+                <!--<span class="text-center">easy ONE</span>-->
+                <h3 class="ovrimg text-center">easy ONE</h3>
+            </div>
+
+            <ul class="list-group text-center">
+                <li class="list-group-item">le pack idéal pour particulier ou indépendant</li>
+                <li class="list-group-item">installation, formation et support technique compris</li>
+                <li class="list-group-item">à partir de 7.99€ / mois ttc</li>
+                <li class="list-group-item">1 numéro d'appel fourni</li>
+                <li class="list-group-item">tarif d'appel voip avantageux</li>
+                <li class="list-group-item">contrat mensuel</li>
+                <li class="list-group-item">support technique compris</li>
+                <li class="list-group-item">nombreuses fonctionnalités</li>
+                <li class="list-group-item">rien à configurer, branchez et téléphonez!</li>
+                <li class="list-group-item">
+                    <button type="button" class="btn btn-warning btn-lg btn1">en savoir plus</button>
+                </li>
+            </ul>
+
+        </div>
+
+        <div class="col-md-6 col-lg-4 col-sm-6 col-xs-12 pixchild">
+            <div id="f2">
+                <!--<img src="images/image2.png" alt="sorry" height="146px" width="372px">-->
+                <!--<span>business START</span>-->
+                <h3 class="ovrimg text-center">business START</h3>
+            </div>
+
+            <ul class="list-group text-center">
+                <li class="list-group-item">le pack idéal pour particulier ou indépendant</li>
+                <li class="list-group-item">installation, formation et support technique compris</li>
+                <li class="list-group-item">à partir de 7.99€ / mois ttc</li>
+                <li class="list-group-item">1 numéro d'appel fourni</li>
+                <li class="list-group-item">tarif d'appel voip avantageux</li>
+                <li class="list-group-item">contrat mensuel</li>
+                <li class="list-group-item">support technique compris</li>
+                <li class="list-group-item">nombreuses fonctionnalités</li>
+                <li class="list-group-item">rien à configurer, branchez et téléphonez!</li>
+                <li class="list-group-item">
+                    <button type="button" class="btn btn-warning btn-lg btn1">en savoir plus</button>
+                </li>
+            </ul>
+
+        </div>
+
+        <div class="col-md-6 col-lg-4 col-sm-6 col-xs-12 pixchild">
+            <div id="f3">
+                <!--<img src="images/image3.png" alt="sorry" height="146px" width="372px">-->
+                <!--<span class="text-center">corporate VIEW</span>-->
+                <h3 class="ovrimg text-center">corporate VIEW</h3>
+            </div>
+
+            <ul class="list-group text-center">
+                <li class="list-group-item">le pack idéal pour particulier ou indépendant</li>
+                <li class="list-group-item">installation, formation et support technique compris</li>
+                <li class="list-group-item">à partir de 7.99€ / mois ttc</li>
+                <li class="list-group-item">1 numéro d'appel fourni</li>
+                <li class="list-group-item">tarif d'appel voip avantageux</li>
+                <li class="list-group-item">contrat mensuel</li>
+                <li class="list-group-item">support technique compris</li>
+                <li class="list-group-item">nombreuses fonctionnalités</li>
+                <li class="list-group-item">rien à configurer, branchez et téléphonez!</li>
+                <li class="list-group-item">
+                    <button type="button" class="btn btn-warning btn-lg btn1">en savoir plus</button>
+                </li>
+            </ul>
+
+        </div>
+
+        <div class="col-md-6 col-lg-4 col-sm-6 col-xs-12 pixchild">
+            <div id="f4">
+                <!--<img src="images/image4.png" alt="sorry" height="146px" width="372px">-->
+                <!--<span>call MASTER</span>-->
+                <h3 class="ovrimg text-center">call MASTER</h3>
+            </div>
+
+            <ul class="list-group text-center">
+                <li class="list-group-item">le pack idéal pour particulier ou indépendant</li>
+                <li class="list-group-item">installation, formation et support technique compris</li>
+                <li class="list-group-item">à partir de 7.99€ / mois ttc</li>
+                <li class="list-group-item">1 numéro d'appel fourni</li>
+                <li class="list-group-item">tarif d'appel voip avantageux</li>
+                <li class="list-group-item">contrat mensuel</li>
+                <li class="list-group-item">support technique compris</li>
+                <li class="list-group-item">nombreuses fonctionnalités</li>
+                <li class="list-group-item">rien à configurer, branchez et téléphonez!</li>
+                <li class="list-group-item">
+                    <button type="button" class="btn btn-warning btn-lg btn1">en savoir plus</button>
+                </li>
+            </ul>
+
+        </div>
+
+        <div class="col-md-6 col-lg-4 col-sm-6 col-xs-12 pixchild">
+            <div id="f5">
+                <!--<img src="images/image6.png" alt="sorry" height="146px" width="372px">-->
+                <!--<span>pc NOMAD</span>-->
+                <h3 class="ovrimg text-center">pc NOMAD</h3>
+            </div>
+
+            <ul class="list-group text-center">
+                <li class="list-group-item">le pack idéal pour particulier ou indépendant</li>
+                <li class="list-group-item">installation, formation et support technique compris</li>
+                <li class="list-group-item">à partir de 7.99€ / mois ttc</li>
+                <li class="list-group-item">1 numéro d'appel fourni</li>
+                <li class="list-group-item">tarif d'appel voip avantageux</li>
+                <li class="list-group-item">contrat mensuel</li>
+                <li class="list-group-item">support technique compris</li>
+                <li class="list-group-item">nombreuses fonctionnalités</li>
+                <li class="list-group-item">rien à configurer, branchez et téléphonez!</li>
+                <li class="list-group-item">
+                    <button type="button" class="btn btn-warning btn-lg btn1">en savoir plus</button>
+                </li>
+            </ul>
+        </div>
+
+        <div class="col-md-6 col-lg-4 col-sm-6 col-xs-12 pixchild">
+            <div id="f6">
+                <!--<img src="images/iamge7.png" alt="sorry" height="146px" width="372px">-->
+                <!--<span>total RETAIL</span>-->
+                <h3 class="ovrimg text-center">total RETAIL</h3>
+            </div>
+
+            <ul class="list-group text-center">
+                <li class="list-group-item">le pack idéal pour particulier ou indépendant</li>
+                <li class="list-group-item">installation, formation et support technique compris</li>
+                <li class="list-group-item">à partir de 7.99€ / mois ttc</li>
+                <li class="list-group-item">1 numéro d'appel fourni</li>
+                <li class="list-group-item">tarif d'appel voip avantageux</li>
+                <li class="list-group-item">contrat mensuel</li>
+                <li class="list-group-item">support technique compris</li>
+                <li class="list-group-item">nombreuses fonctionnalités</li>
+                <li class="list-group-item">rien à configurer, branchez et téléphonez!</li>
+                <li class="list-group-item">
+                    <button type="button" class="btn btn-warning btn-lg btn1">en savoir plus</button>
+                </li>
+            </ul>
+
+        </div>
+
     </div>
-        <div class="col-md-4 col-lg-4 col-sm-6 col-xs-12">
-            asdasdasd loremndjjdjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj
-            asdasdasd loremndjjdjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj
-        </div>
-        <div class="col-md-4 col-lg-4 col-sm-6 col-xs-12">
-            asdasdasd loremndjjdjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj
-            asdasdasd loremndjjdjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj
-        </div>
-
-        <div class="col-md-4 col-lg-4 col-sm-6 col-xs-12">
-            asdasdasd loremndjjdjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj
-            asdasdasd loremndjjdjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj
-
-        </div>
-        <div class="col-md-4 col-lg-4 col-sm-6 col-xs-12">
-            asdasdasd loremndjjdjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj
-            asdasdasd loremndjjdjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj
-        </div>
-        <div class="col-md-4 col-lg-4 col-sm-6 col-xs-12">
-            asdasdasd loremndjjdjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj
-            asdasdasd loremndjjdjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj
-        </div>
-    </div>
-
-
 </div>
+
+<div class="blues">
+    <div class="container blueschild">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 pixchild">
+                <button type="button" class="btn btn-warning pixchild1">je demande un audit gratuit</button>
+                <button type="button" class="btn pixchild2">j'ai encore une question</button>
+                <button type="button" class="btn pixchild3">envoyer cette page à un ami</button>
+
+            </div>
+            <!--<div class="col-lg-3 col-md-3 col-sm-3 col-sm-offset-0 col-xs-8 col-xs-offset-2 pixchild">-->
+            <!---->
+            <!--</div>-->
+            <!--<div class="col-lg-3 col-md-3 col-sm-3 col-sm-offset-0 col-xs-8 col-xs-offset-2 pixchild">-->
+            <!--</div>-->
+        </div>
+    </div>
+</div>
+
+
+<div class="applbackclor">
+    <div class="container">
+        <h4 class="text-center conChild">
+            les fonctionnalités de la téléphonie voip sont faites<br/>
+            pour vous faciliter la vie
+        </h4>
+
+        <p class="text-center conChild1">
+            Une des forces de la téléphonie voip est le grand nombre de fonctionnalités qui sont offertes à ses
+            utilisateurs.
+            Découvrez-les parmis notre assortiment ci-dessous et n'hésitez pas à poser une question ou à demander une
+            démo.
+        </p>
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6 text-center">
+                    <img src="images/icon1.png" height="100px" alt="icon1">
+                    <h4 class="text-center head1">message vocal</h4>
+                </div>
+
+                <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6 text-center">
+                    <img src="images/icon2.png" height="100px" alt="icon2">
+                    <h4 class="text-center head1">programmation
+                        horaire</h4>
+                </div>
+
+                <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6 text-center">
+                    <img src="images/icon3.png" height="100px" alt="icon3">
+                    <h4 class="text-center head1">déviation d'appel</h4>
+                </div>
+
+                <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6 text-center">
+                    <img src="images/icon4.png" height="100px" alt="icon4">
+                    <h4 class="text-center head1">applications
+                        PC/SMARTPHONE</h4>
+                </div>
+
+                <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6 text-center">
+                    <img src="images/icon5.png" height="100px" alt="icon5">
+                    <h4 class="text-center head1">menu vocal</h4>
+                </div>
+
+                <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6 text-center">
+                    <img src="images/icon6.png" height="100px" alt="icon6">
+                    <h4 class="text-center head1">statistiques<br/>
+                        d'appel</h4>
+                </div>
+
+                <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6 text-center">
+                    <img src="images/icon7.png" height="100px" alt="icon1">
+                    <h4 class="text-center head1">interface<br/>
+                        API/TAPI</h4>
+                </div>
+
+                <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6 text-center">
+                    <img src="images/icon8.png" height="100px" alt="icon2">
+                    <h4 class="text-center head1">application<br/>
+                        KYTE</h4>
+                </div>
+
+                <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6 text-center">
+                    <img src="images/icon9.png" height="100px" alt="icon3">
+                    <h4 class="text-center head1">web to fax</h4>
+                </div>
+
+                <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6 text-center">
+                    <img src="images/icon10.png" height="100px" alt="icon4">
+                    <h4 class="text-center head1">fax to mail</h4>
+                </div>
+
+                <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6 text-center">
+                    <img src="images/icon11.png" height="100px" alt="icon5">
+                    <h4 class="text-center head1">appels d'urgence</h4>
+                </div>
+
+                <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6 text-center">
+                    <img src="images/icon12.png" height="100px" alt="icon6">
+                    <h4 class="text-center head1">envoi & réception<br/>
+                        de fax</h4>
+                </div>
+
+
+                <div class="col-lg-2 col-lg-offset-2 col-md-3 col-sm-4 col-xs-6 text-center">
+                    <img src="images/icon13.png" height="100px" alt="icon3">
+                    <h4 class="text-center head1">envoi & réception<br/>
+                        de sms</h4>
+                </div>
+
+                <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6 text-center">
+                    <img src="images/icon14.png" height="100px" alt="icon4">
+                    <h4 class="text-center head1">vidéo conférence</h4>
+                </div>
+
+                <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6 text-center">
+                    <img src="images/icon15.png" height="100px" alt="icon5">
+                    <h4 class="text-center head1">appelle-moi</h4>
+                </div>
+
+                <div class="col-lg-2 col-lg-offset-0 col-md-3 col-md-offset-0 col-sm-4 col-sm-offset-4 col-xs-6 text-center">
+                    <img src="images/icon16.png" height="100px" alt="icon6">
+                    <h4 class="text-center head1">relais d'appels</h4>
+                </div>
+
+                <div class="col-lg-4 col-lg-offset-4 col-md-6 col-md-offset-3 col-sm-6 col-sm-offset-3">
+                    <button type="button" class="btn btn-primary btn-lg btn-block btnchild"> je souhaite une démo
+                    </button>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="scndlst">
+    <div class="container">
+        <h4 class="text-center parce">
+            parce que chaque entreprise a ses spécificités, ipfix a<br/>
+            développé une solution de téléphonie voip pour chacun
+        </h4>
+
+
+        <div class="row aftrparce">
+            <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6 text-center">
+                <img src="images/icon17.png" height="100px" alt="icon1">
+                <h4 class="text-center head2">message vocal</h4>
+            </div>
+
+            <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6 text-center">
+                <img src="images/icon18.png" height="100px" alt="icon1">
+                <h4 class="text-center head2">message vocal</h4>
+            </div>
+
+            <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6 text-center">
+                <img src="images/icon19.png" height="100px" alt="icon1">
+                <h4 class="text-center head2">message vocal</h4>
+            </div>
+
+            <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6 text-center">
+                <img src="images/icon20.png" height="100px" alt="icon1">
+                <h4 class="text-center head2">message vocal</h4>
+            </div>
+
+            <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6 text-center">
+                <img src="images/icon21.png" height="100px" alt="icon1">
+                <h4 class="text-center head2">message vocal</h4>
+            </div>
+
+            <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6 text-center">
+                <img src="images/icon22.png" height="100px" alt="icon1">
+                <h4 class="text-center head2">message vocal</h4>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div class="last-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                <h3>ipfix IP Solutions
+                    <span class="spa"></span>
+                </h3>
+
+                <p>
+                    ipfix développe ses services packs de <br>téléphonie voip pour les entreprises<br> soucieuses de
+                    s'équiper d'une<br> technologie performante et<br> économique.
+                    Les avantages de cette<br> technologie sont nombreux mais elle<br> demande une expertise avancée
+                    dont <br>ipfix a fait sa spécialité depuis plusieurs <br>années.
+                    <br><br>
+                    <span style="color: dodgerblue;"> Lire la suite...</span>
+                </p>
+            </div>
+
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                <h3>liens rapides
+                    <span class="spa"></span>
+                </h3>
+                <ul class="footlst">
+                    <li><a href="#">accueil</a></li>
+                    <li><a href="#">service packs</a></li>
+                    <li><a href="#">fonctionnalités</a></li>
+                    <li><a href="#">produits</a></li>
+                    <li><a href="#">contact</a></li>
+                </ul>
+            </div>
+
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+
+                <button type="button" id="orng" class="btn  btn-lg btn-block">business cases</button>
+                <button type="button" id="gry" class="btn  btn-lg btn-block">revendeurs</button>
+                <button type="button" id="blu" class="btn  btn-lg btn-block">qui sommes-nous</button>
+
+            </div>
+
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                <h3>liens rapides
+                    <span class="spa"></span>
+                </h3>
+                <ul class="socalicon">
+                    <li><a href="http://www.facebook.com"><i class="fa fa-facebook" aria-hidden="true"></i>FACEBOOK</a>
+                    </li>
+                    <li><a href="http://www.twitter.com"><i class="fa fa-twitter" aria-hidden="true"></i>TWITTER</a>
+                    </li>
+                    <li><a href="http://www.linkedin.com"><i class="fa fa-linkedin" aria-hidden="true"></i>
+                        LINKED IN</a></li>
+                    <li><a href="http://www.google.com"><i class="fa fa-google-plus" aria-hidden="true"></i>GOOGLE PLUS</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<footer>
+    <div class="container">
+        <div class="row" style="padding-top: 20px; padding-bottom: 20px;">
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 col-xs-offset-1 col-lg-offset-0 col-md-offset-0 col-sm-offset-0">
+                <p class="footr">© tous droits réservés 2016 <span>ipfix solutions</span></p>
+            </div>
+            <div class="col-lg-2 col-lg-offset-6 col-md-2 col-md-offset-6 col-sm-2 col-sm-offset-6 col-xs-2 col-xs-offset-4">
+                <p class="footr">design par: <span>AppBakerZ</span></p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<script src="https://code.jquery.com/jquery-3.1.0.min.js"
+        integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="
+        crossorigin="anonymous"></script>
+<script type="text/javascript" src="http://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+<script src="function.js"></script>
+
 </body>
 </html>
